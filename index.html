@@ -1,0 +1,306 @@
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>AT Software Project</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class='output-row'>
+      <textarea id='word_display'></textarea>
+  </div>
+
+  <div class='keyboard'>
+    <div class='keyboard-row top'>
+
+      <!-- BUTTON Q -->
+      <span class='letter-container'>
+
+
+        <!-- This div is the container for the button which holds the prediction -->
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-q' onclick='predictionClick(this)'></button>
+        </div>
+
+        <!-- This div is the container for actual keyboard button -->
+        <div class='letter-container-input'>
+          <button class='input' id="input-q" onclick="btnClick(this)">q</button>
+        </div>
+
+      </span>
+
+      <!-- BUTTON W -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-w' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-w" onclick="btnClick(this)">w</button>
+        </div>
+      </span>
+
+      <!-- BUTTON E -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-e' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-e" onclick="btnClick(this)">e</button>
+        </div>
+      </span>
+
+      <!-- BUTTON R -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-r' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-r" onclick="btnClick(this)">r</button>
+        </div>
+      </span>
+
+      <!-- BUTTON T -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-t' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-t" onclick="btnClick(this)">t</button>
+        </div>
+      </span>
+
+      <!-- BUTTON Y -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-y' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-y" onclick="btnClick(this)">y</button>
+        </div>
+      </span>
+
+      <!-- BUTTON U -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-u' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-u" onclick="btnClick(this)">u</button>
+        </div>
+      </span>
+
+      <!-- BUTTON I -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-i' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-i" onclick="btnClick(this)">i</button>
+        </div>
+      </span>
+
+      <!-- BUTTON O -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-o' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-o" onclick="btnClick(this)">o</button>
+        </div>
+      </span>
+
+      <!-- BUTTON P -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-p' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-p" onclick="btnClick(this)">p</button>
+        </div>
+      </span>
+
+    </div>
+
+    <div class='keyboard-row middle'>
+
+      <!-- BUTTON A -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-a' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-a" onclick="btnClick(this)">a</button>
+        </div>
+      </span>
+
+      <!-- BUTTON S -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-s' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-s" onclick="btnClick(this)">s</button>
+        </div>
+      </span>
+
+      <!-- BUTTON D -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-d' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-d" onclick="btnClick(this)">d</button>
+        </div>
+      </span>
+
+      <!-- BUTTON F -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-f' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-f" onclick="btnClick(this)">f</button>
+        </div>
+      </span>
+
+      <!-- BUTTON G -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-g' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-g" onclick="btnClick(this)">g</button>
+        </div>
+      </span>
+
+      <!-- BUTTON H -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-h' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-h" onclick="btnClick(this)">h</button>
+        </div>
+      </span>
+
+      <!-- BUTTON J -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-j' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-j" onclick="btnClick(this)">j</button>
+        </div>
+      </span>
+
+      <!-- BUTTON K -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-k' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-k" onclick="btnClick(this)">k</button>
+        </div>
+      </span>
+
+      <!-- BUTTON L -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-l' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-l" onclick="btnClick(this)">l</button>
+        </div>
+      </span>
+
+    </div>
+
+    <div class='keyboard-row bottom'>
+    
+      <!-- BUTTON Z -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-z' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-z" onclick="btnClick(this)">z</button>
+        </div>
+      </span>
+
+      <!-- BUTTON X -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-x' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-x" onclick="btnClick(this)">x</button>
+        </div>
+      </span>
+
+      <!-- BUTTON C -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-c' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-c" onclick="btnClick(this)">c</button>
+        </div>
+      </span>
+
+      <!-- BUTTON V -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-v' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-v" onclick="btnClick(this)">v</button>
+        </div>
+      </span>
+
+      <!-- BUTTON B -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-b' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-b" onclick="btnClick(this)">b</button>
+        </div>
+      </span>
+
+      <!-- BUTTON N -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-n' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-n" onclick="btnClick(this)">n</button>
+        </div>
+      </span>
+
+      <!-- BUTTON M -->
+      <span class='letter-container'>
+        <div class='letter-container-prediction'>
+          <button class='prediction' id='prediction-m' onclick='predictionClick(this)'></button>
+        </div>
+        <div class='letter-container-input'>
+          <button class='input' id="input-m" onclick="btnClick(this)">m</button>
+        </div>
+      </span>
+    
+    </div>
+
+    <div class='function-row'>
+      <button class="key" id="backspace" onclick="btnClick(this)">back</button>
+      <button class="key" id="spacebar" onclick="btnClick(this)">space</button>
+      <button class="key" id="capslock" onclick="ToggleCapsLock()">caps lock</button>
+    </div>
+
+  </div>
+</body>
+
+<script type="text/javascript" src="jst9.js"></script>
+<script type="text/javascript" src="word_bank.js"></script>
+<script type="text/javascript" src="word_prediction_settings.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="function_keys.js"></script>
+</script>
