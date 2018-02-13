@@ -5,10 +5,13 @@ var capsLock = false;
 // holds all the prediction and keyboard letter buttons
 var keyLetters = document.getElementsByClassName('letter');
 var predictionLetters = document.getElementsByClassName('prediction');
+var predictionNumbers = document.getElementsByClassName('prediction-button');
 
 
 var sentence = [];
 var currentWordIndex = 0;
+
+var currentBlinker = undefined;
 
 
 // Clears and then draws the sentence array with spaces in between
@@ -75,7 +78,7 @@ function WordUpdate(){
   word = RemoveSpacesFromString(word);
 
   // this gets an array of the actual prediction based on the current sentence typed
-  let predictions = tree.predict(word);
+  let predictions = tree.predict(word, 5);
   let prediction = predictions[0];
 
   console.log('current Word: ' + word);
@@ -93,14 +96,53 @@ function WordUpdate(){
       }
     }
 
-    ClearPredictionSpaces();
-    ShowPredictionAboveKey(prediction);
+    //ClearPredictionSpaces();
+      ClearPredictions();
+      ShowPredictionAboveBoard(predictions);
+      var longest = predictions[0];
+      var index = 0;
+      for(var i=0;i<predictions.length;i++){
+          if(predictions[i].length > longest.length){
+              longest = predictions[i];
+              index = i;
+          }
+      }
+      if(currentBlinker != undefined){
+          clearInterval(currentBlinker);
+          for(var i=0;i<predictions.length;i++){
+              document.getElementById("predictionNum-"+i).style.color = 'black';
+              document.getElementById("predictionNum-"+i).style.backgroundColor = 'grey';
+          }
+
+      }
+
+      BlinkObject(document.getElementById("predictionNum-"+index),500);
+    //ShowPredictionAboveKey(prediction);
     
     //show multiple predictions above multiple keys?
     //ShowPredictionAboveKey(predictions[1]);
     //ShowPredictionAboveKey(predictions[2]);
   }
   
+}
+
+
+
+function ShowPredictionAboveBoard(predictions){
+    for(var i=0;i<predictions.length;i++){
+        console.log(predictions[i]);
+        var predictionSpace = document.getElementById("predictionNum-"+i);
+        predictionSpace.innerHTML = predictions[i];
+    }
+}
+
+function BlinkObject(object, inter){
+
+    var interval = window.setInterval(function () {
+        object.style.color = (object.style.color == 'black' ? 'white' : 'black');
+        object.style.backgroundColor = (object.style.backgroundColor == 'grey' ? 'red' : 'grey');
+    }, inter);
+    currentBlinker = interval;
 }
 
 // takes a string and displays it above the next character in the current sentence
@@ -117,6 +159,22 @@ function ShowPredictionAboveKey(prediction){
   if(prediction.length === currentWord.length) return;
 
   predictionSpace.innerHTML = prediction;
+}
+
+function ClearPredictions(){
+
+    for(var i=0;i<predictionNumbers.length;i++){
+        predictionNumbers[i].innerHTML = '';
+    }
+
+    if(currentBlinker != undefined){
+        clearInterval(currentBlinker);
+        for(var i=0;i<predictionNumbers.length;i++){
+            predictionNumbers[i].style.color = 'black';
+            predictionNumbers[i].style.backgroundColor = 'grey';
+        }
+
+    }
 }
 
 // clears all strings from each prediction element

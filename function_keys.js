@@ -19,7 +19,7 @@ function SpaceKey(){
   currentWordIndex ++;
   sentence.push('');
   console.log(sentence);
-  ClearPredictionSpaces();
+  ClearPredictions();
   DrawSentence();
 };
 

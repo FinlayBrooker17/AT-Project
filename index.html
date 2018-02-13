@@ -11,16 +11,29 @@
   </div>
 
   <div class='keyboard'>
+    <div class="prediction-row">
+        <span>
+
+
+          <button class='prediction-button' id="predictionNum-0" onclick='predictionClick(this)'></button>
+
+
+          <button class='prediction-button' id="predictionNum-1" onclick='predictionClick(this)'></button>
+
+
+          <button class='prediction-button' id="predictionNum-2" onclick='predictionClick(this)'></button>
+
+          <button class='prediction-button' id="predictionNum-3" onclick='predictionClick(this)'></button>
+
+
+          <button class='prediction-button' id="predictionNum-4" onclick='predictionClick(this)'></button>
+
+            </span>
+    </div>
     <div class='keyboard-row top'>
 
       <!-- BUTTON Q -->
       <span class='letter-container'>
-
-
-        <!-- This div is the container for the button which holds the prediction -->
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-q' onclick='predictionClick(this)'></button>
-        </div>
 
         <!-- This div is the container for actual keyboard button -->
         <div class='letter-container-input'>
@@ -31,9 +44,6 @@
 
       <!-- BUTTON W -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-w' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-w" onclick="btnClick(this)">w</button>
         </div>
@@ -41,9 +51,6 @@
 
       <!-- BUTTON E -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-e' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-e" onclick="btnClick(this)">e</button>
         </div>
@@ -51,9 +58,6 @@
 
       <!-- BUTTON R -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-r' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-r" onclick="btnClick(this)">r</button>
         </div>
@@ -61,9 +65,6 @@
 
       <!-- BUTTON T -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-t' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-t" onclick="btnClick(this)">t</button>
         </div>
@@ -71,9 +72,6 @@
 
       <!-- BUTTON Y -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-y' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-y" onclick="btnClick(this)">y</button>
         </div>
@@ -81,9 +79,6 @@
 
       <!-- BUTTON U -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-u' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-u" onclick="btnClick(this)">u</button>
         </div>
@@ -91,9 +86,6 @@
 
       <!-- BUTTON I -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-i' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-i" onclick="btnClick(this)">i</button>
         </div>
@@ -101,9 +93,6 @@
 
       <!-- BUTTON O -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-o' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-o" onclick="btnClick(this)">o</button>
         </div>
@@ -111,9 +100,6 @@
 
       <!-- BUTTON P -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-p' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-p" onclick="btnClick(this)">p</button>
         </div>
@@ -125,9 +111,6 @@
 
       <!-- BUTTON A -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-a' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-a" onclick="btnClick(this)">a</button>
         </div>
@@ -135,9 +118,6 @@
 
       <!-- BUTTON S -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-s' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-s" onclick="btnClick(this)">s</button>
         </div>
@@ -145,9 +125,6 @@
 
       <!-- BUTTON D -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-d' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-d" onclick="btnClick(this)">d</button>
         </div>
@@ -155,9 +132,6 @@
 
       <!-- BUTTON F -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-f' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-f" onclick="btnClick(this)">f</button>
         </div>
@@ -165,9 +139,6 @@
 
       <!-- BUTTON G -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-g' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-g" onclick="btnClick(this)">g</button>
         </div>
@@ -175,9 +146,6 @@
 
       <!-- BUTTON H -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-h' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-h" onclick="btnClick(this)">h</button>
         </div>
@@ -185,9 +153,6 @@
 
       <!-- BUTTON J -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-j' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-j" onclick="btnClick(this)">j</button>
         </div>
@@ -195,9 +160,6 @@
 
       <!-- BUTTON K -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-k' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-k" onclick="btnClick(this)">k</button>
         </div>
@@ -205,9 +167,6 @@
 
       <!-- BUTTON L -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-l' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-l" onclick="btnClick(this)">l</button>
         </div>
@@ -219,9 +178,6 @@
     
       <!-- BUTTON Z -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-z' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-z" onclick="btnClick(this)">z</button>
         </div>
@@ -229,9 +185,6 @@
 
       <!-- BUTTON X -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-x' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-x" onclick="btnClick(this)">x</button>
         </div>
@@ -239,9 +192,6 @@
 
       <!-- BUTTON C -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-c' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-c" onclick="btnClick(this)">c</button>
         </div>
@@ -249,9 +199,6 @@
 
       <!-- BUTTON V -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-v' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-v" onclick="btnClick(this)">v</button>
         </div>
@@ -259,9 +206,6 @@
 
       <!-- BUTTON B -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-b' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-b" onclick="btnClick(this)">b</button>
         </div>
@@ -269,9 +213,6 @@
 
       <!-- BUTTON N -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-n' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-n" onclick="btnClick(this)">n</button>
         </div>
@@ -279,9 +220,6 @@
 
       <!-- BUTTON M -->
       <span class='letter-container'>
-        <div class='letter-container-prediction'>
-          <button class='prediction' id='prediction-m' onclick='predictionClick(this)'></button>
-        </div>
         <div class='letter-container-input'>
           <button class='input' id="input-m" onclick="btnClick(this)">m</button>
         </div>
